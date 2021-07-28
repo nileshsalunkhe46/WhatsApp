@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WhatsApp</title>
+	<link rel="icon" href="wapp.png" type="image/png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		
+		 .top-1
+		 {
+		 	margin-top: -8px;
+		 	margin-left: -10px;
+		 	background-color: rgb(0,150,136);
+		 	width: 1535px;
+		 	height: 127px;
+		 	position: RELATIVE;
+		 }
+		 .top-2
+		 {
+		 	margin-left: -10px;
+		 	background-color: rgb(218,219,212);
+		 	width: 1535px;
+		 	height: 100%;
+		 	position: fixed;
+		 }
+		 .container
+		 {
+		 	margin-left: 62px;
+		 	margin-top: -108px;
+		 	background-color: rgb(248,249,255);
+		 	width: 1396px;
+		 	height: 683px;
+		 	position: fixed;
+
+		 }
+		 .content
+		 {
+		 	width: 420px;
+		 	height: 100%;
+		 	background-color: rgb(258,249,250);
+		 	border-right: 2px solid rgb(229,229,230);
+		 }
+		 .header
+		 {
+		 	width: 420px;
+		 	height: 60px;
+		 	background-color: rgb(237,237,237);
+		 }
+		 .search
+		 {
+		 	width: 420px;
+		 	height: 48px;
+		 	background-color: rgb(246,246,246);
+		 	color: rgb(218,219,220);
+		 }
+		 .rounder{
+		 	border-radius: 100px;
+		 	width: 40px;
+		 	height: 40px;
+		 	margin-top: 10px;
+		 	margin-left: 16px;
+		 }
+		 .rounder-1{
+		 	border-radius: 100px;
+		 	width: 40px;
+		 	height: 40px;
+		 	margin-top: 13px;
+		 	margin-right: 10px;
+		 	border:none;
+		 	font-size: x-large;
+		 	color: rgb(145,145,145);
+		 	background-color: (237,237,237);
+		 	float:right;
+		 }
+		 .rounder-2{
+		 	border-radius: 100px;
+		 	width: 40px;
+		 	height: 40px;
+		 	margin-top: 13px;
+		 	margin-right: 9px;
+		 	border:none;
+		 	font-size: x-large;
+		 	color: rgb(145,145,145);
+		 	background-color: (237,237,237);
+		 	float:right;
+		
+		 }
+.dropbtn {
+  			border-radius: 100px;
+ 			width: 40px;
+  			height: 40px;
+  			margin-top: 10px;
+		 	margin-right: 18px;
+  			border:none;
+  			font-size: x-large;
+  			background-color: rgb(237,237,237);
+  			color: rgb(145,145,145);
+            float:right;
+		 }
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: rgb(213,213,213);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: rgb(248,249,250);
+  width: 160px;
+  overflow: visible;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  left: 55%;top: 0;
+  width: 40%;
+  border-radius: 5px;
+  color: gray;
+  transition: 1s ease-out;
+  padding: 10px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  z-index: 1;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+		 .rounder-1:hover,.rounder-2:hover,.dropbtn:hover{
+		 	background-color: rgb(213,213,213);
+		 }
+		 .sear
+		 {
+		 	
+		 	border: none;
+		 	margin-top: 5px;
+		 	border-radius: 0px 20px 20px 0px;
+		 	height: 35px;
+		 	width: 355px;
+		 }
+		i
+		{
+			color: rgb(145,145,145);
+		}
+		.btn-search
+		{
+			margin-left: 16px;
+			border-radius: 20px 0px 0px 20px;
+			background-color: white;
+			border:none;
+			height: 35px;
+		}
+		.chat
+		{
+			background-color: rgb(255,255,255);
+			width: 420px;
+		 	height: 575px;
+		 	position: fixed;
+		}
+		.chat-rounder{
+		 	border-radius: 100px;
+		 	width: 50px;
+		 	height: 50px;
+		 	margin-top: 5px;
+		 	margin-left: 14px;
+		 }
+		.dp{
+			position: fixed;
+		}
+		 .chat-name
+		 {
+		 	font-family: Ebrima;
+		 	margin-top: 20px;
+		 	margin-left: 80px; 
+		 	font-size: large;
+		 	border:none;
+		 	background-color: none;
+		 }
+		 .msg{
+		 	color: rgb(164,164,164);
+		 	font-size: small;
+		 	font-family: Arial;
+		 }
+		 .time{
+		 	color: rgb(164,164,164);
+		 	font-size: small;
+		 	margin-right: 16px;
+		 	font-family: Times New Roman;
+		 	float: right;	
+		 }
+		 .x-msg
+		 {
+		 	color: blue;
+		 	height: 15px;
+		 }
+		 hr
+		 {
+		 	margin-left: 80px;
+		 	border: 0;
+   			border-top: 1px solid #eee;
+		 }
+		 .content-img
+		 {
+		 	position: absolute;
+		 	margin-right: 50px;
+		 	
+		 	left: 660px;
+ 		 	top: 100px;
+ 		 	z-index: -1;
+		 }
+
+	</style>
+	<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</head>
+<body>
+	<div class="top-1">	</div>
+	<div class="top-2">	</div>
+	<div class="container">
+		<div class="content">
+			<div class="header">
+				<img src="dp.jpg" class="rounder"/>
+				<button onclick="myFunction()" class="dropbtn"><b>&#x22EE;</b></button>
+						<div id="myDropdown" class="dropdown-content">
+   								 <a href="#home">New group</a>
+    							<a href="#about">Create a room</a>
+    							<a href="#contact">Profile</a>
+    							<a href="#contact">Archived</a>
+    							<a href="#contact">Starred</a>
+    							<a href="#contact">Settings</a>
+    							<a href="#contact">Logout</a>
+  						</div>
+			
+				<button class="rounder-2"><span data-testid="chat" data-icon="chat" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M19.005 3.175H4.674C3.642 3.175 3 3.789 3 4.821V21.02l3.544-3.514h12.461c1.033 0 2.064-1.06 2.064-2.093V4.821c-.001-1.032-1.032-1.646-2.064-1.646zm-4.989 9.869H7.041V11.1h6.975v1.944zm3-4H7.041V7.1h9.975v1.944z"></path></svg></span></button>
+				<button class="rounder-1"><span data-testid="status-v3-unread" data-icon="status-v3-unread" class=""><svg id="df9d3429-f0ef-48b5-b5eb-f9d27b2deba6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12.072 1.761a10.05 10.05 0 0 0-9.303 5.65.977.977 0 0 0 1.756.855 8.098 8.098 0 0 1 7.496-4.553.977.977 0 1 0 .051-1.952zM1.926 13.64a10.052 10.052 0 0 0 7.461 7.925.977.977 0 0 0 .471-1.895 8.097 8.097 0 0 1-6.012-6.386.977.977 0 0 0-1.92.356zm13.729 7.454a10.053 10.053 0 0 0 6.201-8.946.976.976 0 1 0-1.951-.081v.014a8.097 8.097 0 0 1-4.997 7.209.977.977 0 0 0 .727 1.813l.02-.009z"></path><path fill="#009588" d="M19 1.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"></path></svg></span></button>
+				
+			</div>
+			<div class="search">
+				<button class="btn-search">&nbsp;&nbsp;<i class="fa fa-search"></i></button>
+				<input type="text"  placeholder="      Search or start new chat" class="sear">
+      
+			</div>
+			<div class="chat">
+				<div class="chat-1">
+					<div class="dp">
+						<img src="akka1.jpg" class="chat-rounder"/>
+					</div>
+					<div class="chat-name">
+						<span>Akka</span>
+						<span class="time">20:58</span><br>
+						<span class="msg">Thamb baghte</span>
+					</div>
+				</div>
+				<hr>
+
+				<div class="chat-4">
+					<div class="dp">
+						<img src="teja.jpg" class="chat-rounder"/>
+					</div>
+					<div class="chat-name">
+						<span>Teja</span>
+						<span class="time">19:46</span><br>
+						<span class="msg">Group video call kela hota re</span>
+					</div>
+				</div>
+				<hr>
+				<div class="chat-3">
+					<div class="dp">
+						<img src="maha.jpg" class="chat-rounder"/>
+					</div>
+					<div class="chat-name">
+						<span>Maharashtra</span>
+						<span class="time">18:41</span><br>
+						<span class="msg"><img class="x-msg" src="https://img.icons8.com/windows/32/000000/do-not-dryclean.png"/><i>You deleted this message</i>
+						</span>
+					</div>
+				</div>
+				<hr>
+				<div class="chat-4">
+					<div class="dp">
+						<img src="ani.jpg" class="chat-rounder"/>
+					</div>
+					<div class="chat-name">
+						<span>Anya</span>
+						<span class="time">11:08</span><br>
+						<span class="msg"><b>Paypal Internship Drive 2021:</b>Company: Paypa... </span>
+					</div>
+				</div>
+				<hr>
+				<div class="chat-2">
+					<div class="dp">
+						<img src="dada.jpg" class="chat-rounder"/>
+					</div>
+					<div class="chat-name">
+						<span>Balraje</span>
+						<span class="time">yesterday</span><br>
+						<span class="msg"><img class="x-msg" src="https://img.icons8.com/material-outlined/24/000000/double-tick.png"/>Okay</span>
+					</div>
+				</div>
+				
+				<hr>
+				<div class="chat-5">
+					<div class="dp">
+						<img src="baba.jpg" class="chat-rounder"/>
+					</div>
+					<div class="chat-name">
+						<span>Rohit Baba</span>
+						<span class="time">Monday</span><br>
+						<span class="msg">He 14 divsa ch kit ahe</span>
+					</div>
+				</div>
+				<hr>
+				<div class="chat-6">
+						<div class="dp">
+						<img src="sou.jpg" class="chat-rounder"/>
+					</div>
+					<div class="chat-name">
+						<span>Sourabh</span>
+						<span class="time">Monday</span><br>
+						<span class="msg">Chal dongravar</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img src="cont.png" class="content-img"/>
+	
+	</div>
+	
+
+</body>
+</html>
